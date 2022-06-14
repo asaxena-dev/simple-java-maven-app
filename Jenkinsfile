@@ -10,5 +10,10 @@ pipeline{
         sh 'java -version'
       }
     }
+    stage('Build'){
+      steps{
+        mvn -B -DskipTests clean package
+      }
+    }
   }
 }
