@@ -27,7 +27,7 @@ pipeline{
     }
     stage('Delivery'){
       steps{
-        sh './jenkins/scripts/delivery.sh'
+        sh './jenkins/scripts/deliver.sh'
       }
     }
   }
