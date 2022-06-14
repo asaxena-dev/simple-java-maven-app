@@ -6,7 +6,7 @@ pipeline{
     stage('Prepare Codebase'){
       steps {
         echo "This is Sample Java Project with mvn"
-        mvn version
+        mvn --version
         sh 'java -version'
       }
     }
